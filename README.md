@@ -83,7 +83,8 @@ These instructions will show you how to run the application on your development 
     ```
     source ~/autonav_ws/devel/setup.bash # If you didn't add this line to ~/.bashrc
     source ./env/bin/activate 
-    rosrun autonomous_navigation Navigation.py
+    roscd autonomous_navigation/scripts
+    python Navigation.py
     ```
     This will run our autonomous steering algorithm. 
 
