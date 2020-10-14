@@ -1,4 +1,4 @@
-#!./env/bin/python
+#!/usr/bin/python
 
 from __future__ import division
 from itertools import count
