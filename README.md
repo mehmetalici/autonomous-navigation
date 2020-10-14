@@ -54,20 +54,22 @@ These instructions will show you how to run the application on your development 
     pip install scikit-build keras==2.3 tensorflow pillow opencv-python==4.2.0.32 pathlib
     ```
 3. Obtain a neural network model. The neural network model is not included in Git repo due to its size. Therefore, you can apply either of the following:
+    
+    **1. Option**: Build a new model. Simply run:
+    ```
+    roscd autonomous-navigation/scripts
+    python Shape_Classifier.py
+    ```
+    Note that training takes around 1-2 minutes.
 
-    **1. Option**: Download our pre-trained model: https://drive.google.com/file/d/1eiGGMFkl_IvPHtl0rFOmlZsLFT7jwsVg/view?usp=sharing
+    **2. Option**: Download our pre-trained model: https://drive.google.com/file/d/1eiGGMFkl_IvPHtl0rFOmlZsLFT7jwsVg/view?usp=sharing
     
     Then, extract to ```scripts``` directory:
     ```
     roscd rosautonomous-navigation/scripts
     unzip /path/to/downloaded/model.zip .
     ```
-    **2. Option**: Build a new model. Simply run:
-    ```
-    roscd autonomous-navigation/scripts
-    python Shape_Classifier.py
-    ```
-    Note that training might take around 5 minutes.
+
 4. Now, launch the world:
     
     Launch the world with objects by,

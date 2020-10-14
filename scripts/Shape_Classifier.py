@@ -2,7 +2,7 @@ from keras.optimizers import Adam
 from keras.models import Sequential
 from keras.preprocessing.image import ImageDataGenerator
 from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Activation
-
+from pathlib import Path
 # Constants
 NUMBER_OF_CLASSES = 4
 IMAGE_WIDTH, IMAGE_HEIGHT = 200, 200
@@ -53,3 +53,4 @@ model.fit_generator(train_generator, steps_per_epoch=15, epochs=10, validation_d
 
 # Saving Model
 model.save("nn_controller.h5")
+print("Model was exported to %s" % Path("./nn_controller.h5").absolute())
