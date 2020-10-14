@@ -84,9 +84,12 @@ These instructions will show you how to run the application on your development 
     After the above command, following world should appear:
 
     ![](resources/filledup.png)
-5. Finally, run the neural-network controller by,
+5. Finally, open a new terminal and run the neural-network controller by,
     ```
-    rosrun autonomous_navigation Navigation.py
+    source ~/autonav_ws/devel/setup.bash # If you didn't add this line to ~/.bashrc
+    roscd autonomous_navigation
+    source ./env/bin/activate
+    python ./scripts/Navigation.py
     ```
     This will run our autonomous steering algorithm. 
 
@@ -102,10 +105,15 @@ Then, use Model Editor http://gazebosim.org/tutorials?tut=model_editor to create
 
 ![](resources/model_add.gif)
 
-After you are done, start the controller,
+After you are done, open a new terminal session and start the controller,
+
 ```
-rosrun autonomous_navigation Navigation.py
-``` 
+source ~/autonav_ws/devel/setup.bash # If you didn't add this line to ~/.bashrc
+roscd autonomous_navigation
+source ./env/bin/activate
+python ./scripts/Navigation.py
+```
+
 
 
 
