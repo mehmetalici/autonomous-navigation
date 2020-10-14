@@ -77,7 +77,7 @@ These instructions will show you how to run the application on your development 
     roscd autonomous_navigation
     unzip grey_wall.zip ~/.gazebo/models -r
     ```
-    Now, launch the world with objects by,
+    2. Now, launch the world with objects by,
     ```
     roslaunch autonomous_navigation gazebo_object.launch
     ```
