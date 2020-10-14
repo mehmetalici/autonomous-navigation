@@ -147,7 +147,7 @@ We use the following components from that project,
 * Car navigation code
 
 Our project extends the initial work by,
-* an easy camera sensor image logging and labelling interface that leads to training for new classes on record time,
+* a camera sensor image logging and labelling interface that leads to fast and easy training for new classes,
 * datasets for ```Space```, ```Box```,  ```Sphere```, and ```Border``` classes,
 * a model trained over the dataset and achieved satisfactory results on the simulation,  
 * a 'bordered' world and 'filled-with-objects' world,
