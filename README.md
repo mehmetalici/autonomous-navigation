@@ -57,7 +57,7 @@ These instructions will show you how to run the application on your development 
     
     **1. Option**: Build a new model. Simply run:
     ```
-    roscd autonomous-navigation/scripts
+    roscd autonomous_navigation/scripts
     python Shape_Classifier.py
     ```
     Note that training takes around 1-2 minutes.
@@ -66,7 +66,7 @@ These instructions will show you how to run the application on your development 
     
     Then, extract to ```scripts``` directory:
     ```
-    roscd rosautonomous-navigation/scripts
+    roscd rosautonomous_navigation/scripts
     unzip /path/to/downloaded/model.zip .
     ```
 
