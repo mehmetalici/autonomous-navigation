@@ -55,14 +55,14 @@ These instructions will show you how to run the application on your development 
     ```
 3. Obtain a neural network model. The neural network model is not included in Git repo due to its size. Therefore, you can apply either of the following:
     
-    **1. Option: Build a new model.** Simply run:
+    **First Option: Build a new model.** Simply run:
     ```
     roscd autonomous_navigation/scripts
     python Shape_Classifier.py
     ```
     Note that training takes around 1-2 minutes.
 
-    **2. Option: Download our pre-trained model**: https://drive.google.com/file/d/1eiGGMFkl_IvPHtl0rFOmlZsLFT7jwsVg/view?usp=sharing
+    **Second Option: Download our pre-trained model**: https://drive.google.com/file/d/1eiGGMFkl_IvPHtl0rFOmlZsLFT7jwsVg/view?usp=sharing
     
     Then, extract to ```scripts``` directory:
     ```
@@ -154,9 +154,9 @@ We use the following components from that project,
 * Car navigation code
 
 Our project extends the initial work by,
-* a camera sensor image logging and labelling interface that leads to fast and easy training for new classes,
+* a camera image logging and labelling interface that leads to easy training for new classes with command-line arguments,
 * datasets for ```Space```, ```Box```,  ```Sphere```, and ```Border``` classes,
-* a model trained over the dataset and achieved satisfactory results on the simulation,  
+* a model trained over the dataset and achieved agreeable results on the simulation,  
 * a 'bordered' world and 'filled-with-objects' world,
 * a comprehensive README.
 
