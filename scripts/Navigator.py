@@ -26,6 +26,8 @@ DISTANCE = 2
 LEFT_ANGLE = 30
 RIGHT_ANGLE = 30
 
+KERAS_WORKAROUND = True
+
 TURNING_SPEED = 15
 PI = 3.1415926535897
 classes = ['Border', 'Box', 'Space', 'Sphere']
@@ -38,6 +40,10 @@ def totimestamp(dt, epoch=datetime(1970,1,1)):
 class Counter:
     count = 0
 
+if KERAS_WORKAROUND:
+    is_model_loaded = None
+    graph = None
+    model = None
 
 def export_img(image, ds_dir):
     now = datetime.now()
@@ -55,7 +61,14 @@ def image_cb(data, ds_dir):
     if ds_dir != "empty":
         export_img(image, ds_dir)
     else: 
-        global graph
+        if KERAS_WORKAROUND:
+            global graph
+            global model
+            global is_model_loaded
+            if not is_model_loaded:
+                model = load_model(os.path.join(os.path.dirname(__file__), "nn_controller.h5"))
+                graph = tf.get_default_graph()
+                is_model_loaded = True
         with graph.as_default():
             prediction = classes[np.squeeze(np.argmax(model.predict(image), axis=1))]
             move(prediction)
@@ -198,7 +211,10 @@ if __name__=='__main__':
         ds_dir = make_directory("test/%s" % args.test_for)
         export_cls = args.train_for
     else:
-        model = load_model(os.path.join(os.path.dirname(__file__), "nn_controller.h5"))
-        graph = tf.get_default_graph()
+        if not KERAS_WORKAROUND:
+            model = load_model(os.path.join(os.path.dirname(__file__), "nn_controller.h5"))
+            graph = tf.get_default_graph()
+        else:
+            pass
     
     main(export_cls=selected_arg, ds_dir=ds_dir)
