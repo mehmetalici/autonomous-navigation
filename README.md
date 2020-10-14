@@ -55,14 +55,14 @@ These instructions will show you how to run the application on your development 
     ```
 3. Obtain a neural network model. The neural network model is not included in Git repo due to its size. Therefore, you can apply either of the following:
     
-    **1. Option**: Build a new model. Simply run:
+    **1. Option: Build a new model.** Simply run:
     ```
     roscd autonomous_navigation/scripts
     python Shape_Classifier.py
     ```
     Note that training takes around 1-2 minutes.
 
-    **2. Option**: Download our pre-trained model: https://drive.google.com/file/d/1eiGGMFkl_IvPHtl0rFOmlZsLFT7jwsVg/view?usp=sharing
+    **2. Option: Download our pre-trained model**: https://drive.google.com/file/d/1eiGGMFkl_IvPHtl0rFOmlZsLFT7jwsVg/view?usp=sharing
     
     Then, extract to ```scripts``` directory:
     ```
