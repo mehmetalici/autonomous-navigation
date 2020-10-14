@@ -105,13 +105,11 @@ Then, use Model Editor http://gazebosim.org/tutorials?tut=model_editor to create
 
 ![](resources/model_add.gif)
 
-After you are done, open a new terminal session and start the controller,
+After you are done, start the controller,
 
 ```
-source ~/autonav_ws/devel/setup.bash # If you didn't add this line to ~/.bashrc
-roscd autonomous_navigation
-source ./env/bin/activate
-python ./scripts/Navigation.py
+roscd autonomous_navigation/scripts
+python Navigation.py
 ```
 
 
