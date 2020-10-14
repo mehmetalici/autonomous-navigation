@@ -79,8 +79,10 @@ These instructions will show you how to run the application on your development 
     After the above command, following world should appear:
 
     ![](resources/filledup.png)
-5. Finally, run the neural-network controller by,
+5. Finally, open a new terminal and run the neural-network controller by,
     ```
+    source ~/autonav_ws/devel/setup.bash # If you didn't add this line to ~/.bashrc
+    source ./env/bin/activate 
     rosrun autonomous_navigation Navigation.py
     ```
     This will run our autonomous steering algorithm. 
