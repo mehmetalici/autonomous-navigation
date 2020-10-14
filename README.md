@@ -167,7 +167,7 @@ Our project extends the initial work by,
 * a comprehensive README.
 
 ## Authors
-Mehmet Yasar Alici [Github](github.com/malici), [Email](emailto:myasar.alici@gmail.com)
+Mehmet Yasar Alici [Github](github.com/malici), [Email](mailto:myasar.alici@gmail.com)
 
 
 ## License
