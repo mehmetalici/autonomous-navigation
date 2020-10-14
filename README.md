@@ -51,7 +51,7 @@ These instructions will show you how to run the application on your development 
     ```
     Then, install dependencies:
     ```
-    pip install scikit-build keras tensorflow pillow opencv-python==4.2.0.32 pathlib
+    pip install scikit-build keras==2.3 tensorflow pillow opencv-python==4.2.0.32 pathlib
     ```
 3. Obtain a neural network model. The neural network model is not included in Git repo due to its size. Therefore, you can apply either of the following:
 

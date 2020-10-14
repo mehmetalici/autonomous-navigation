@@ -36,7 +36,7 @@ train_data_generator = ImageDataGenerator(
     horizontal_flip=True)
 
 train_generator = train_data_generator.flow_from_directory(
-    directory="/home/malici/autonav/src/autonomous-navigation/scripts/datasets/training",
+    directory="./datasets/training",
     target_size=(IMAGE_WIDTH, IMAGE_HEIGHT),
     batch_size=3,
     class_mode="categorical")
@@ -44,7 +44,7 @@ train_generator = train_data_generator.flow_from_directory(
 test_data_generator = ImageDataGenerator(rescale=1./255)
 
 test_generator = test_data_generator.flow_from_directory(
-    directory="/home/malici/autonav/src/autonomous-navigation/scripts/datasets/test",
+    directory="./datasets/test",
     target_size=(IMAGE_WIDTH, IMAGE_HEIGHT),
     batch_size=1,
     class_mode="categorical")
