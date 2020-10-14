@@ -38,7 +38,7 @@ These instructions will show you how to run the application on your development 
     ```
     python -m pip install --upgrade pip 
     python -m pip install --user virtualenv 
-    roscd autonomous-navigation
+    roscd autonomous_navigation
     python -m virtualenv env
     source ./env/bin/activate 
     ```
