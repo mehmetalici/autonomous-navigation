@@ -72,12 +72,12 @@ These instructions will show you how to run the application on your development 
 
 4. Now, launch the world:
     
-    1. First unzip grey wall model that we use to border our world to ~/.gazebo/models:
+    1. Unzip the grey wall model that we use to border our world to ~/.gazebo/models:
     ```
     roscd autonomous_navigation
     unzip grey_wall.zip ~/.gazebo/models -r
     ```
-    2. Now, launch the world with objects by,
+    2. Launch the world with objects by,
     ```
     roslaunch autonomous_navigation gazebo_object.launch
     ```
