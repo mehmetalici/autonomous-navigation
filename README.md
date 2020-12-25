@@ -1,5 +1,5 @@
 # Autonomous Navigation using Deep Learning
-A neural-network controller that steers the car based on visual input obtained from the camera sensor. First, a neural network predicts the object that the car confronts and then the controller detemines the next action accordingly. Developed at the top of the [fork](https://github.com/aderabiruk/autonomous-navigation) as a warm-up for our EE492 Senior Project at Bogazici University.
+A neural-network controller that steers the car based on visual input obtained from the camera sensor. First, a neural network predicts the object that the car confronts and then the controller detemines the next action accordingly. Developed at the top of the [fork](https://github.com/aderabiruk/autonomous-navigation).
 
 ![](resources/autonav.gif)
 
